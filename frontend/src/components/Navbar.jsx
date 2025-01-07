@@ -39,7 +39,7 @@ const Navbar = ({ isLoggedIn, handleLogout, navigateToTeam }) => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
               <Heartbeat className="h-8 w-8 text-green-600" />
-              <span className="ml-2 text-xl font-bold text-green-800">MediSync</span>
+              <span className="ml-2 text-xl font-bold text-green-800">HealthHaven</span>
             </Link>
           </div>
 

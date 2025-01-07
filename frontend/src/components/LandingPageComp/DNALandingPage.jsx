@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import DNAScene from './DNAScene';
 import Navbar from '../Navbar';
-import Button from '../ui/LandingPageButton';
+import Button from './ui/LandingPageButton';
 
 const DNALandingPage = () => {
   const [activeBase, setActiveBase] = useState(null);
@@ -38,7 +38,7 @@ const DNALandingPage = () => {
             transition={{ duration: 0.8 }}
             className="text-4xl md:text-7xl font-bold mb-4"
           >
-            MediSync
+            HealthHaven
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, x: -50 }}

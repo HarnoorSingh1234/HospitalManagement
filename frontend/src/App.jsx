@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { useRef, useEffect } from 'react';
-
+import PatientDashboard from './pages/PatientDashboardPage'
 import './App.css';
 import LandingPage from './pages/LandingPage';
 
@@ -42,6 +42,7 @@ const AppWrapper = ({ scrollToTeam, teamRef }) => {
       <Navbar isLoggedIn={false} handleLogout={() => {}} navigateToTeam={navigateToTeam} />
       <Routes>
         <Route path="/" element={<LandingPage teamRef={teamRef} />} />
+        <Route path="/dashboard" element={<PatientDashboard />} /> {/* Patient Dashboard Route */}
       </Routes>
       <Footer />
     </div>
